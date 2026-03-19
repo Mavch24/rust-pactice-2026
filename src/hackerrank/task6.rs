@@ -1,0 +1,28 @@
+pub fn kangaroo(x1: i32, v1: i32, x2: i32, v2: i32) -> String {
+    // Якщо перший кенгуру не швидший за другого, він його ніколи не наздожене
+    if v1 <= v2 {
+        return "NO".to_string();
+    }
+
+    // Перевіряємо, чи зустрінуться вони в одній точці (математично)
+    if (x2 - x1) % (v1 - v2) == 0 {
+        "YES".to_string()
+    } else {
+        "NO".to_string()
+    }
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test_kangaroo_yes() {
+        assert_eq!(kangaroo(0, 3, 4, 2), "YES");
+    }
+
+    #[test]
+    fn test_kangaroo_no() {
+        assert_eq!(kangaroo(0, 2, 5, 3), "NO");
+    }
+}
