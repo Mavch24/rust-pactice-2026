@@ -1,10 +1,8 @@
 pub mod task3;
-mod task0;
-mod task03;
-mod task04;
-mod task05;
-mod task06;
-mod task07;
-mod task08;
-mod task09;
-mod task10;
+pub mod task4;
+pub mod task5;
+pub mod task6;
+pub mod task7;
+pub mod task8;
+pub mod task9;
+pub mod task10;

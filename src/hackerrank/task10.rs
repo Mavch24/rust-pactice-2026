@@ -1,4 +1,4 @@
-pub fn divisibleSumPairs(n: i32, k: i32, ar: &[i32]) -> i32 {
+pub fn divisible_sum_pairs(n: i32, k: i32, ar: &[i32]) -> i32 {
     let mut count = 0;
     let n_usize = n as usize;
 
@@ -19,6 +19,6 @@ mod tests {
 
     #[test]
     fn test_divisible_sum_pairs() {
-        assert_eq!(divisibleSumPairs(6, 3, &[1, 3, 2, 6, 1, 2]), 5);
+        assert_eq!(divisible_sum_pairs(6, 3, &[1, 3, 2, 6, 1, 2]), 5);
     }
 }
