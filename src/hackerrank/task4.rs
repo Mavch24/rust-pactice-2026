@@ -1,4 +1,4 @@
-pub fn gradingStudents(grades: &[i32]) -> Vec<i32> {
+pub fn grading_students(grades: &[i32]) -> Vec<i32> {
     grades.iter().map(|&grade| {
         if grade < 38 {
             grade
@@ -21,6 +21,6 @@ mod tests {
     fn test_grading_students() {
         let grades = vec![73, 67, 38, 33];
         let expected = vec![75, 67, 40, 33];
-        assert_eq!(gradingStudents(&grades), expected);
+        assert_eq!(grading_students(&grades), expected);
     }
 }

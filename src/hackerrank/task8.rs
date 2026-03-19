@@ -1,4 +1,4 @@
-pub fn breakingRecords(scores: &[i32]) -> Vec<i32> {
+pub fn breaking_records(scores: &[i32]) -> Vec<i32> {
     if scores.is_empty() {
         return vec![0, 0];
     }
@@ -28,6 +28,6 @@ mod tests {
     #[test]
     fn test_breaking_records() {
         let scores = vec![10, 5, 20, 20, 4, 5, 2, 25, 1];
-        assert_eq!(breakingRecords(&scores), vec![2, 4]);
+        assert_eq!(breaking_records(&scores), vec![2, 4]);
     }
 }

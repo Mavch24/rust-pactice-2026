@@ -1,3 +1,4 @@
+#[allow(non_snake_case)]
 pub fn countApplesAndOranges(s: i32, t: i32, a: i32, b: i32, apples: &[i32], oranges: &[i32]) {
     let apples_count = apples.iter()
         .map(|&d| a + d)
@@ -20,6 +21,6 @@ mod tests {
     #[test]
     fn test_apples_oranges() {
         // Тест для перевірки логіки (можна залишити порожнім або як заглушку)
-        assert!(true);
+        countApplesAndOranges(7, 11, 5, 15, &[-2, 2, 1], &[2, -4]);
     }
 }

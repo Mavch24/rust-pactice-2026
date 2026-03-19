@@ -1,4 +1,4 @@
-pub fn getTotalX(a: &[i32], b: &[i32]) -> i32 {
+pub fn get_total_x(a: &[i32], b: &[i32]) -> i32 {
     let mut count = 0;
 
     // Шукаємо числа від максимального в A до мінімального в B
@@ -26,6 +26,6 @@ mod tests {
 
     #[test]
     fn test_get_total_x() {
-        assert_eq!(getTotalX(&[2, 4], &[16, 32, 96]), 3);
+        assert_eq!(get_total_x(&[2, 4], &[16, 32, 96]), 3);
     }
 }
